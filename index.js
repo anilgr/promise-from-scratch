@@ -97,7 +97,7 @@ class PPromise {
                         reason=>controlledPromise._reject(reason)
                     )
                 } else {
-                    controlledPromise._reject(valueOrPromise)
+                    controlledPromise._resolve(valueOrPromise)
                 }
             } else {
                 controlledPromise._reject(this._reason);
